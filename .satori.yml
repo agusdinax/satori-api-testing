@@ -1,0 +1,11 @@
+settings:
+  name: "Satori CLI Tests"
+  log: slack, discord, email, telegram
+  image: public.ecr.aws/docker/library/python:3.9-slim-bullseye
+  report: pdf
+
+import:
+  - "satori://secrets/semgrep.yml"
+test:
+  assertReturnCode: 0
+  assertStderrNotContains: Traceback
