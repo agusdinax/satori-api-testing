@@ -1,0 +1,14 @@
+settings:
+  name: "SATORI API TESTING"
+  description: Integral tests for satori API Testing
+  logOnPass: email, telegram
+  timeout: 500
+  #report: False
+  #cron: "*/5 * * * ? *"
+  #count: 20
+
+import:
+  - file://utilities/utilities.yml
+  - file://home/GET-Home.yml
+  - file://dashboard/GET-Dashboard.yml
+

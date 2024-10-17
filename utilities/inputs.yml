@@ -1,0 +1,9 @@
+settings:
+  name: "INPUTS FOR SATORI API TESTING"
+  
+input: 
+  url_api:
+    - value: 'https://api.satori.ci/''
+
+  bearer:
+    - value: 'u_ba2479c398d94edea5dadf794ba6ffd8b63d402494ecfe76596793ab8dd86c8d'

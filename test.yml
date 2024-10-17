@@ -1,0 +1,11 @@
+settings:
+  name: "Tests for /home - SATORI API TESTING"
+  description: Send a GET request to ${{url_api}} home. Expect 200 OK status Ok
+  logOnPass: email, telegram
+  #timeout: 60
+  #report: False
+  #cron: "*/5 * * * ? *"
+  #count: 20
+
+list_public:
+  - satori reports --public

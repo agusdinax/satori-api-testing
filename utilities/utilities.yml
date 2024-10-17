@@ -1,0 +1,8 @@
+settings:
+  name: "NECESSARY INSTALLS FOR SATORI API TESTING"
+
+install:
+  curl:
+  - apt update
+  - apt install -qy curl screen
+  assertReturnCode: 0

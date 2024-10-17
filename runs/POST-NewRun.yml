@@ -1,0 +1,15 @@
+settings:
+  name: "Tests for /home - SATORI API TESTING"
+  description: Send a GET request to ${{url_api}}/home. Expect 200 OK.
+  timeout: 60
+
+#import:
+ # - file://utilities/utilities.yml
+  #- file://utilities/inputs.yml
+
+homeOK:
+  assertStdoutContains:
+    - HTTP/2 200
+    - Satori CI
+  run:
+  - "curl -si -X GET 'https://api.satori.ci/runs' -H 'Authorization: Bearer u_ba2479c398d94edea5dadf794ba6ffd8b63d402494ecfe76596793ab8dd86c8d' -H 'Content-Type: multipart/form-data'"
