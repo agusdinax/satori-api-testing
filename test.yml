@@ -9,3 +9,4 @@ settings:
 
 list_public:
   - satori reports --public
+  #

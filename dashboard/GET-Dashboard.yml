@@ -15,3 +15,4 @@ DashboardOK:
     - Private
   run:
   - "curl -si -X GET 'https://api.satori.ci/dashboard' -H 'Authorization: Bearer u_ba2479c398d94edea5dadf794ba6ffd8b63d402494ecfe76596793ab8dd86c8d'"
+  #
